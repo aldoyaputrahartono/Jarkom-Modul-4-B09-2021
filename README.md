@@ -106,7 +106,7 @@ Repositori Praktikum Jarkom Modul 4
 ![g7](https://user-images.githubusercontent.com/31863229/142810707-01d3c9a7-7030-45a5-9849-fc243a400e2b.png)
 
 ### CIDR Tree
-
+![image](https://user-images.githubusercontent.com/81459084/142914120-a340b011-d3a1-4508-b241-419cd7f572d2.png)
 
 ### Setting GNS3
 
