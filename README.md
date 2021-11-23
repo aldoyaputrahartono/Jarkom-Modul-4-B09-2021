@@ -356,7 +356,39 @@ iface eth0 inet static
 ```
 
 ### Routing
+- **FOOSHA**
+```
+route add -net 192.181.0.0 netmask 255.255.192.0 gw 192.181.64.2
+route add -net 192.181.128.0 netmask 255.255.224.0 gw 192.181.160.2
+route add -net 10.151.79.108 netmask 255.255.255.252 gw 192.181.160.2
+```
 
+- **WATER7**
+```
+route add -net 192.181.0.0 netmask 255.255.240.0 gw 192.181.16.2
+```
+
+- **GUANHAO**
+```
+route add -net 192.181.130.0 netmask 255.255.255.240 gw 192.181.128.2
+route add -net 192.181.144.0 netmask 255.255.248.0 gw 192.181.152.2
+route add -net 10.151.79.108 netmask 255.255.255.252 gw 192.181.152.2
+```
+
+- **OIMO**
+```
+route add -net 192.181.148.0 netmask 255.255.252.0 gw 192.181.144.2
+```
+
+Pada router FOOSHA, jalankan:
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.181.0.0/16
+```
+
+Pada semua node (router dan client) selain FOOSHA, jalankan:
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 
 ## Kendala
 
