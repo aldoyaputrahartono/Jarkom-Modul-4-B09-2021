@@ -5,7 +5,7 @@ Repositori Praktikum Jarkom Modul 4
 |NRP           |Nama                   |
 |:------------:|:---------------------:|
 |05111940000084|Aldo Yaputra Hartono   |
-|||
+|05111940000092|Maximilian H M Lingga  |
 |||
 
 ## Topologi
