@@ -106,10 +106,254 @@ Repositori Praktikum Jarkom Modul 4
 ![g7](https://user-images.githubusercontent.com/31863229/142810707-01d3c9a7-7030-45a5-9849-fc243a400e2b.png)
 
 ### CIDR Tree
-![image](https://user-images.githubusercontent.com/81459084/142914120-a340b011-d3a1-4508-b241-419cd7f572d2.png)
+![g8](https://user-images.githubusercontent.com/31863229/143030104-10faa525-ee24-4d32-aaaa-b598e6233d9e.png)
 
 ### Setting GNS3
+**Router**
+- **FOOSHA**
+```
+auto eth0
+iface eth0 inet dhcp
 
+auto eth1
+iface eth1 inet static
+	address 192.181.192.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.181.64.1
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 192.181.160.1
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 10.151.79.105
+	netmask 255.255.255.252
+```
+
+- **WATER7**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.64.2
+	netmask 255.255.255.252
+	gateway 192.181.64.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.32.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.181.16.1
+	netmask 255.255.255.252
+```
+
+- **PUCCI**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.16.2
+	netmask 255.255.255.252
+	gateway 192.181.16.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.0.1
+	netmask 255.255.248.0
+
+auto eth2
+iface eth2 inet static
+	address 192.181.8.1
+	netmask 255.255.255.128
+```
+
+- **GUANHAO**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.160.2
+	netmask 255.255.255.252
+	gateway 192.181.160.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.132.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.181.128.1
+	netmask 255.255.254.0
+
+auto eth3
+iface eth3 inet static
+	address 192.181.152.1
+	netmask 255.255.255.252
+```
+
+- **ALABASTA**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.128.2
+	netmask 255.255.254.0
+	gateway 192.181.128.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.130.1
+	netmask 255.255.255.240
+```
+
+- **OIMO**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.152.2
+	netmask 255.255.255.252
+	gateway 192.181.152.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.144.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 10.151.79.109
+	netmask 255.255.255.252
+```
+
+- **SEASTONE**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.144.2
+	netmask 255.255.255.0
+	gateway 192.181.144.1
+
+auto eth1
+iface eth1 inet static
+	address 192.181.148.1
+	netmask 255.255.252.0
+```
+
+**Client**
+- **BLUENO**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.192.2
+	netmask 255.255.252.0
+	gateway 192.181.192.1
+```
+
+- **CIPHER**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.32.2
+	netmask 255.255.252.0
+	gateway 192.181.32.1
+```
+
+- **CALMBELT**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.0.2
+	netmask 255.255.248.0
+	gateway 192.181.0.1
+```
+
+- **COURTYARD**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.0.3
+	netmask 255.255.248.0
+	gateway 192.181.0.1
+```
+
+- **JIPANGU**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.8.2
+	netmask 255.255.255.128
+	gateway 192.181.8.1
+```
+
+- **JABRA**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.132.2
+	netmask 255.255.252.0
+	gateway 192.181.132.1
+```
+
+- **MAINGATE**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.128.3
+	netmask 255.255.254.0
+	gateway 192.181.128.1
+```
+
+- **JORGE**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.130.2
+	netmask 255.255.255.240
+	gateway 192.181.130.1
+```
+
+- **ENIESLOBBY**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.144.3
+	netmask 255.255.255.0
+	gateway 192.181.144.1
+```
+
+- **ELENA**
+```
+auto eth0
+iface eth0 inet static
+	address 192.181.148.2
+	netmask 255.255.252.0
+	gateway 192.181.148.1
+```
+
+**Server**
+- **DORIKI**
+```
+auto eth0
+iface eth0 inet static
+	address 10.151.79.106
+	netmask 255.255.255.252
+	gateway 10.151.79.105
+```
+
+- **FUKUROU**
+```
+auto eth0
+iface eth0 inet static
+	address 10.151.79.110
+	netmask 255.255.255.252
+	gateway 10.151.79.109
+```
 
 ### Routing
 
